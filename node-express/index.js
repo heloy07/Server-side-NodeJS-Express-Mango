@@ -19,7 +19,7 @@ app.use('/dishes:dishId', dishRouter);
 app.use('/leaders', leaderRouter);
 app.use('/leaders:leaderId', leaderRouter);
 app.use('/promotions', promotionRouter);
-app.use('/promotions:promotionId', promotionRouter);
+app.use('/promotions:promoId', promotionRouter);
 
 app.use(express.static(__dirname + '/public'));
 app.use((req, res, next) => {
