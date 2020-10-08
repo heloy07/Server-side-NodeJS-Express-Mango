@@ -2,3 +2,6 @@ node-express/node_modules
 conFusionServer/node_modules
 node-mango/node_modules
 node-mongoose/node_modules
+conFusionServer/bin/cert.csr
+conFusionServer/bin/certificate.pem
+conFusionServer/bin/private.key
