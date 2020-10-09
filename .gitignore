@@ -5,3 +5,4 @@ node-mongoose/node_modules
 conFusionServer/bin/cert.csr
 conFusionServer/bin/certificate.pem
 conFusionServer/bin/private.key
+conFusionServer/config.js
