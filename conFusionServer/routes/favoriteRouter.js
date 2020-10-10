@@ -28,7 +28,7 @@ favoriteRouter.route('/')
     (a) create a favorite document if such a document corresponding to this user does not already exist in the system, 
     (b) add the dishes specified in the body of the message to the list of favorite dishes for the user, if the dishes do not already exists in the list of favorites.
     */
-    .post(cors.corsWithOptions, authenticate.verifyUser, authenticate.verifyAdmin, (req, res, next) => {
+    .post(cors.corsWithOptions, authenticate.verifyUser, (req, res, next) => {
         Favorites.findOneAndUpdate({ user: req.user._id }, {
             $set: { user: req.user._id },
             $addToSet: { dishes: { $each: req.body } }
